@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: $fontSize;
+	background: $lightGrayishBlue;
+	line-height: 1.5;
+	font-family: 'Rubik', 'Trebuchet MS';
+}
+
+header {
+	background: #000;
+	color: #fff;
+	box-shadow: 0px 0px 3px #000;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	h1 {
+		padding: 10px 0px;
+	}
+	nav {
+		display: none;
+		ul {
+			background: $white;
+			list-style-type: none;
+
+			li a {
+				text-decoration: none;
+				color: #000;
+			}
+		}
+	}
+}
+
+// Presentation Section
+
+#presentation {
+	background-image: url('../../images/acceuil.jpg');
+	height: 60vh;
+	text-align: center;
+	color: $white;
+	font-size: 1.3rem;
+	text-shadow: 1px 3px 3px $softOrange;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-size: cover;
+}
+
+main {
+	.container {
+		text-align: justify;
+		max-width: 992px;
+		width: 90%;
+		margin: 1rem auto;
+		h2 {
+			text-align: center;
+			padding: 10px;
+		}
+
+		#propos {
+			ul {
+				list-style-type: none;
+			}
+		}
+	}
+}
+// Footer Section
+
+footer {
+	text-align: center;
+	background: $darkBlue;
+	color: $white;
+	padding: $padding;
+	margin-top: $marginTop;
+
+	.fot {
+		.fot-s-up {
+			p {
+				font-weight: 700;
+				font-size: 1.5rem;
+				letter-spacing: 2px;
+				margin-bottom: $padding;
+			}
+		}
+		.fot-s-down {
+			padding-bottom: $padding;
+			ul {
+				list-style-type: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1rem;
+			}
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		li a {
+			text-decoration: none;
+			color: $white;
+			padding: 20px 5px;
+			font-weight: 700;
+			letter-spacing: 1.8px;
+			font-size: 1.1rem;
+			margin-top: 10px;
+		}
+		li a:hover {
+			color: $limeGreen;
+		}
+	}
+	p {
+		margin: $padding 0;
+		font-weight: bolder;
+		line-height: 2px;
+	}
+}
