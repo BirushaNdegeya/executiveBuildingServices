@@ -1,0 +1,262 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#none {
+	overflow: hidden;
+}
+
+section {
+	margin-bottom: 25px;
+}
+
+html {
+	font-size: $fontSize;
+	background: $lightGrayishBlue;
+	line-height: 1.5;
+	font-family: 'Rubik', 'Trebuchet MS';
+}
+
+header.view {
+	background: #fff;
+	box-shadow: 0px 0px 3px #333;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	nav {
+		display: none;
+	}
+}
+
+// Presentation Section
+
+#presentation {
+	background-image: url('../../images/home3.jpg');
+	background-size: contain;
+	text-align: center;
+
+	color: $white;
+	font-size: 1.3rem;
+	text-shadow: 1px 3px 3px $softOrange;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	background-size: cover;
+	width: 100%;
+}
+
+main {
+	.container {
+		text-align: justify;
+		max-width: 992px;
+		width: 90%;
+		margin: 1rem auto;
+		h2 {
+			text-align: center;
+			padding: 10px;
+		}
+
+		// Location
+
+		#location {
+			padding-top: 4rem;
+		}
+
+		// A propos de Nous
+
+		#propos {
+			ul {
+				list-style-type: none;
+				margin-left: 20px;
+			}
+		}
+
+		#temoignage {
+			width: 100%;
+
+			.tem {
+				box-shadow: 0px 0px 3px #333;
+				background: #fff;
+				margin-bottom: 30px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				img {
+					width: 100%;
+					height: auto;
+				}
+				caption {
+					text-align: center;
+					padding: 10px;
+				}
+			}
+		}
+	}
+	#contact {
+		margin-bottom: 0px;
+		background-image: url('../../images/image-confetti.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		h2 {
+			color: #fff;
+			text-align: center;
+			padding: 20px;
+		}
+		form {
+			max-width: 600px;
+			width: 90%;
+			margin: auto auto;
+			padding: 15px;
+			border-radius: 5px;
+			padding-bottom: 15px;
+			input {
+				background: #fff;
+				border: none;
+				border-radius: 5px;
+				font-weight: bolder;
+				margin-bottom: 15px;
+				width: 100%;
+				padding: 15px;
+				font: inherit;
+				outline: none;
+			}
+			textarea {
+				outline: none;
+				background-color: #fff;
+				border-radius: 5px;
+				width: 100%;
+				padding: 15px;
+				resize: none;
+				font: inherit;
+				height: 200px;
+			}
+			button {
+				padding: 20px;
+				margin-top: 10px;
+				cursor: pointer;
+				border: 0px;
+				border-radius: 5px;
+				outline: none;
+				background: darkblue;
+				color: #fff;
+				font: inherit;
+			}
+			button:hover,
+			button:focus {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	#experts {
+		img {
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			border-radius: 50%;
+		}
+		.exp-container {
+			display: flex;
+			flex-direction: column;
+			.img {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 100%;
+				margin: 10px;
+				background: #ffff;
+				padding: 10px;
+				box-shadow: 0px 0px 5px #000;
+				border-radius: 10px;
+				img {
+					border: 5px solid #333;
+
+					width: 100%;
+					height: auto;
+				}
+				figcaption {
+					text-align: center;
+					font-weight: 700;
+					color: #fff;
+					font-size: 1.5rem;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					padding-bottom: 20px;
+					p {
+						color: #000;
+						margin-bottom: 10px;
+						a {
+							text-decoration: none;
+							width: 70%;
+							color: #fff;
+							margin: 1rem auto;
+							background: darkgreen;
+							padding: 10px 20px;
+							border-radius: 8px;
+						}
+						a:hover,
+						a:focus {
+							opacity: 0.8;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// Footer Section
+
+footer {
+	text-align: center;
+	background: $darkBlue;
+	color: $white;
+	padding: $padding;
+	// margin-top: $marginTop;
+
+	.fot {
+		.fot-s-down {
+			padding-bottom: $padding;
+			ul {
+				list-style-type: none;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1rem;
+			}
+		}
+	}
+
+	ul {
+		list-style-type: none;
+		li a {
+			text-decoration: none;
+			color: $white;
+			padding: 20px 5px;
+			font-weight: 700;
+			letter-spacing: 1.8px;
+			font-size: 1.1rem;
+			margin-top: 10px;
+		}
+		li a:hover {
+			color: $limeGreen;
+		}
+	}
+	p {
+		margin: $padding 0;
+		font-weight: bolder;
+		line-height: 2px;
+	}
+}

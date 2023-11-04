@@ -1,0 +1,313 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#none {
+  overflow: hidden;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+html {
+  font-size: 16px;
+  background: hsl(220, 16%, 96%);
+  line-height: 1.5;
+  font-family: "Rubik", "Trebuchet MS";
+}
+
+header.view {
+  background: #fff;
+  box-shadow: 0px 0px 3px #333;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  text-align: center;
+}
+header nav {
+  display: none;
+}
+
+#presentation {
+  background-image: url("../../images/home3.jpg");
+  background-size: contain;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.3rem;
+  text-shadow: 1px 3px 3px hsl(35, 77%, 62%);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-size: cover;
+  width: 100%;
+}
+
+main .container {
+  text-align: justify;
+  max-width: 992px;
+  width: 90%;
+  margin: 1rem auto;
+}
+main .container h2 {
+  text-align: center;
+  padding: 10px;
+}
+main .container #location {
+  padding-top: 4rem;
+}
+main .container #propos ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+main .container #temoignage {
+  width: 100%;
+}
+main .container #temoignage .tem {
+  box-shadow: 0px 0px 3px #333;
+  background: #fff;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .container #temoignage .tem img {
+  width: 100%;
+  height: auto;
+}
+main .container #temoignage .tem caption {
+  text-align: center;
+  padding: 10px;
+}
+main #contact {
+  margin-bottom: 0px;
+  background-image: url("../../images/image-confetti.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main #contact h2 {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+main #contact form {
+  max-width: 600px;
+  width: 90%;
+  margin: auto auto;
+  padding: 15px;
+  border-radius: 5px;
+  padding-bottom: 15px;
+}
+main #contact form input {
+  background: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bolder;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 15px;
+  font: inherit;
+  outline: none;
+}
+main #contact form textarea {
+  outline: none;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px;
+  resize: none;
+  font: inherit;
+  height: 200px;
+}
+main #contact form button {
+  padding: 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 5px;
+  outline: none;
+  background: darkblue;
+  color: #fff;
+  font: inherit;
+}
+main #contact form button:hover,
+main #contact form button:focus {
+  opacity: 0.8;
+}
+main #experts img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+main #experts .exp-container {
+  display: flex;
+  flex-direction: column;
+}
+main #experts .exp-container .img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
+  background: white;
+  padding: 10px;
+  box-shadow: 0px 0px 5px #000;
+  border-radius: 10px;
+}
+main #experts .exp-container .img img {
+  border: 5px solid #333;
+  width: 100%;
+  height: auto;
+}
+main #experts .exp-container .img figcaption {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+main #experts .exp-container .img figcaption p {
+  color: #000;
+  margin-bottom: 10px;
+}
+main #experts .exp-container .img figcaption p a {
+  text-decoration: none;
+  width: 70%;
+  color: #fff;
+  margin: 1rem auto;
+  background: darkgreen;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+main #experts .exp-container .img figcaption p a:hover,
+main #experts .exp-container .img figcaption p a:focus {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  background: hsl(233, 26%, 24%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.5625rem;
+}
+footer .fot .fot-s-down {
+  padding-bottom: 1.5625rem;
+}
+footer .fot .fot-s-down ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer ul {
+  list-style-type: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+  padding: 20px 5px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+footer ul li a:hover {
+  color: hsl(136, 65%, 51%);
+}
+footer p {
+  margin: 1.5625rem 0;
+  font-weight: bolder;
+  line-height: 2px;
+}
+
+@media (min-width: 992px) {
+  header.view {
+    background: #fff;
+    box-shadow: 0px 0px 3px #333;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  header h1 {
+    width: 40%;
+  }
+  header nav {
+    display: block;
+    width: 60%;
+  }
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  header nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+  }
+  header nav ul li a:hover,
+  header nav ul li a:focus {
+    color: #fff;
+    text-decoration: underline;
+  }
+  main .container #temoignage .tem-container {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+  }
+  main .container #temoignage .tem-container .tem {
+    width: 48%;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  main .container #temoignage .tem-container .tem img {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    margin-top: 0;
+  }
+  main .container #experts .exp-container {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main .container #experts .exp-container .img {
+    width: 47%;
+    margin-bottom: 20px;
+  }
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  footer .fot .fot-s-up {
+    margin-top: 0;
+  }
+  footer .fot .fot-s-up p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 1.5625rem;
+  }
+}/*# sourceMappingURL=style.css.map */
