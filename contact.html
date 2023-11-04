@@ -3,7 +3,95 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Nous Contactez | Executive Building Services</title>
+		<link rel="stylesheet" href="./app/css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+			rel="stylesheet" />
+		<title>Executive Building Services</title>
 	</head>
-	<body></body>
+	<body>
+		<header>
+			<h1>Executive Building Services</h1>
+			<nav>
+				<ul>
+					<li><a href="./index.html">Page d'acceuil</a></li>
+					<li><a href="#historique">Historique </a></li>
+					<li><a href="#propos">A Propos de Nous</a></li>
+					<li><a href="#temoignage">Temoignages</a></li>
+					<li><a href="./contact.html">Nous Contactez</a></li>
+				</ul>
+			</nav>
+		</header>
+		<main role="main">
+			<div class="container">
+				<!-- Location -->
+
+				<section id="location">
+					<h2>Notre Adresse</h2>
+
+					<p>
+						Le siège social est situé au numéro 72 avenue EPO Ville,
+						quartier LUMUMBA, Commune de MBUNYA, ville de Bunia,
+						province de l’ITURI en République Démocratique du Congo.
+					</p>
+				</section>
+
+				<!-- Nos Experts -->
+
+				<section id="experts">
+					<h2>Nos Experts</h2>
+
+					<div class="exp-container">
+						<!-- code injected by javascript -->
+					</div>
+				</section>
+			</div>
+			<!-- Contact Form -->
+
+			<section id="contact">
+				<h2>Envoyer Nous votre Message</h2>
+				<form>
+					<input
+						type="text"
+						name="userName"
+						id="userName"
+						placeholder="Nom et Post-nom"
+						required />
+					<input
+						type="email"
+						name="userEmail"
+						id="userEmail"
+						placeholder="Email"
+						required />
+					<textarea
+						name="userMessage"
+						id="userMessage"
+						required
+						placeholder="Votre message"></textarea>
+					<button type="submit">ENVOYER</button>
+				</form>
+			</section>
+		</main>
+		<aside id="pop-up">
+			<!-- background blue -->
+			<div class="alert">
+				<img src="./images/icon-success.svg" alt="" />
+				<h2>Merci de nous ecrire</h2>
+				<p>
+					Un message de confirmation vous sera envoye sur votre
+					adresse email
+				</p>
+				<button id="ok">OK</button>
+			</div>
+		</aside>
+
+		<!-- Footer Section -->
+
+		<footer></footer>
+
+		<script src="./app/js/script.js"></script>
+		<script src="./app/js/index.js"></script>
+	</body>
 </html>
